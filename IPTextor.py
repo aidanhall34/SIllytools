@@ -1,8 +1,7 @@
 #!/bin/python3
-#This is meant to be run as a cron job.
-#It will find you public IP address and send it to you in a text message
-#If you enable port forwarding on some devices you can phone home without paying
-#For a static IP :)
+#This script requires a twilio account, you can set this up here
+#https://www.twilio.com/try-twilio
+#See the Twilio doc for obtaining you auth tokens
 #You will need to set up a way to send a text, I will be using twilo
 import time
 import requests
@@ -16,18 +15,19 @@ def __main__():
     ip = requests.get('https://api.ipify.org').text
 
     def sendmessage():
-        #Change these
+            #Change these
             sid = '' 
             auth_token = ''
             client = Client(sid, auth_token)
         
             message = client.messages.create(
+            #Change these
             from_="",
             to="",    
             body="My home IP is: " + ip
             )            
             return print(message.sid)
-
+#This bit of the scipt can be left untouched
     def makeipfile():
         f = open("IP.txt", "w+")
         f.write(ip)
