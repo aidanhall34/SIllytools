@@ -1,8 +1,8 @@
 #!/bin/python3
 #This script requires a twilio account, you can set this up here
 #https://www.twilio.com/try-twilio
-#See the Twilio doc for obtaining you auth tokens
-#You will need to set up a way to send a text, I will be using twilo
+#See the Twilio doc for obtaining auth tokens
+#See the read me for general information about twilio
 import time
 import requests
 import os
