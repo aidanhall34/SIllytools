@@ -4,6 +4,6 @@ WORKDIR
 COPY . .
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-CMD ["unscrubbed.py"]
+CMD ["IPTextor.py"]
 ENTRYPOINT ["python3"]
 
