@@ -18,7 +18,7 @@ def __main__():
     
     def sendmessage():
         #Change this
-            sid = '' 
+            sid = ''
             auth_token = ''
             client = Client(sid, auth_token)
         
@@ -75,6 +75,6 @@ def __main__():
         sendmessage()
 while True:
     __main__()
-  #  time.sleep(600)
+    time.sleep(600)
     
 
