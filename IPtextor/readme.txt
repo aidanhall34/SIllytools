@@ -23,7 +23,7 @@ After updating the python script, point the docker file "workdir" to the directo
 
 
 After you have updated the python script and dockerfile, create the docker image by running:
-sudo docker build -t IPtextor .
+sudo docker build -t iptextor .
 
 View the image with:
 sudo docker images
