@@ -29,7 +29,7 @@ View the image with:
 sudo docker images
 
 Run the container with:
-sudo docker run -d -e TZ=Australia/Sydney iptextor 
+sudo docker run -d -e TZ=Australia/Sydney iptextor .
 
 View the container name with
 sudo docker ps
