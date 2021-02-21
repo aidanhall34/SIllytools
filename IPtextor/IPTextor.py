@@ -20,8 +20,6 @@ def sendmessage(ip):
 # Start of exception and HTTP logging
 loggers = {}
 formatter = logging.Formatter('%(asctime)s : %(message)s', datefmt='%d/%m/%y %H:%M:%S %p' )
-# logger = logging.basicConfig(filename='HTTPandERROR.log', level=logging.DEBUG,
-#             format='%(asctime)s : %(message)s', datefmt='%d/%m/%y %H:%M:%S %p' )
 
 logger = logging.getLogger("log")
 logger.setLevel(logging.INFO)
